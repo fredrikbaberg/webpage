@@ -1,0 +1,3 @@
+There should probably be a license here at some point...
+
+If you would like to use some material I have, please contact me first.
