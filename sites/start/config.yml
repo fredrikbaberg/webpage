@@ -1,0 +1,41 @@
+baseURL: https://baberg.nu/
+languageCode: sv-se
+DefaultContentLanguage: sv
+title: Baberg.nu
+theme: hugo-theme-learn
+disableLanguages: ["en"]
+themesDir: ../../themes/
+publishDir: ../../public
+
+params:
+  author: Fredrik Båberg
+  description: Baberg.nu hemsida
+  disableSearch: false
+  themeVariant: green
+
+relativeURLs: true
+uglyURLs: true
+
+outputs:
+  home: ["HTML", "RSS", "JSON"]
+
+languages:
+  sv:
+    title: Välkommen till Baberg.nu
+    languageName: Svenska
+  en:
+    title: Welcome to Baberg.nu
+    weight: 2
+    languageName: English
+
+menu:
+  shortcuts:
+    - name: Presentation
+      identifier: presentation
+      url: /presentation
+    - name: Biografi
+      identifier: bio
+      url: /bio
+    - name: Scouter
+      identifier: scouter
+      url: /scouter

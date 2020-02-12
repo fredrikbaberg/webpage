@@ -1,0 +1,23 @@
+baseURL = "https://baberg.nu/presentation"
+languageCode = "sv-se"
+DefaultContentLanguage = "sv"
+title = "Baberg.nu"
+theme = "reveal-hugo"
+themesDir = "../../themes/"
+publishDir = "../../public/presentation"
+
+# relativeURLs = true
+# uglyURLs = true
+
+disableKinds = ["sitemap", "RSS", "taxonomy", "taxonomyTerm"]
+
+[params]
+    author = "Fredrik Båberg"
+
+[params.reveal_hugo]
+    theme = "serif"
+
+[outputFormats.Reveal]
+    baseName = "index"
+    mediaType = "text/html"
+    isHTML = true
