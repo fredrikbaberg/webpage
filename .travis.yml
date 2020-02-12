@@ -19,7 +19,7 @@ deploy:
   repo: fredrikbaberg/fredrikbaberg.github.io
   target_branch: master
   provider: pages
-  skip_cleanup: false
+  skip_cleanup: true
   github_token: $GITHUB_TOKEN
   on:
     branch: master
