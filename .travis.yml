@@ -15,7 +15,7 @@ script:
 
 deploy:
   provider: pages:git
-  deploy_key: $GITHUB_TOKEN
+  token: $GITHUB_TOKEN
   local_dir: public
   repo: fredrikbaberg/fredrikbaberg.github.io
   target_branch: master
