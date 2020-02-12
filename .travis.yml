@@ -9,6 +9,7 @@ before_install:
   - tar xzvvf bin/hugo.tar.gz -C ./bin
   - chmod +x build.sh
   - chmod +x deploy.sh
+  - mkdir -p public/
 
 script:
   - ./build.sh
