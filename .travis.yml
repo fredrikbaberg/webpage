@@ -15,11 +15,9 @@ script:
   - ./build.sh
 
 deploy:
+  provider: pages:git
+  deploy_key: $GITHUB_TOKEN
   local_dir: public
   repo: fredrikbaberg/fredrikbaberg.github.io
   target_branch: master
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN
-  on:
-    branch: master
+  cleanup: false  
