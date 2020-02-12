@@ -9,7 +9,7 @@ before_install:
   - tar xzvvf bin/hugo.tar.gz -C ./bin
   - chmod +x build.sh
   - chmod +x deploy.sh
-  - mkdir -p public/
+  - rm -rf public/*
 
 script:
   - ./build.sh
@@ -19,9 +19,7 @@ deploy:
   repo: fredrikbaberg/fredrikbaberg.github.io
   target_branch: master
   provider: pages
-  skip_cleanup: true
+  skip_cleanup: false
   github_token: $GITHUB_TOKEN
-  email: fredrik.baberg@gmail.com
-  name: "fredrikbaberg"
   on:
     branch: master
