@@ -17,6 +17,7 @@ script:
 deploy:
   provider: pages:git
   token: $GITHUB_TOKEN
+  edge: true
   local_dir: public
   repo: fredrikbaberg/fredrikbaberg.github.io
   target_branch: master
