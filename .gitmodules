@@ -1,3 +1,4 @@
 [submodule "public"]
 	path = public
-	url = https://github.com/fredrikbaberg/fredrikbaberg.github.io
+	url = https://github.com/fredrikbaberg/fredrikbaberg.github.io.git
+	branch = master

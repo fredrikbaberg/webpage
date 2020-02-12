@@ -1,0 +1,36 @@
+baseURL: https://fredrikbaberg.github.io/
+languageCode: sv-se
+DefaultContentLanguage: sv
+title: Baberg.nu
+copyright: "(c) 2020 Fredrik Baberg"
+theme: hugo-theme-learn
+disableLanguages: ["en"]
+themesDir: themes/
+publishDir: 'public'
+
+params:
+  author: Fredrik Båberg
+  description: Baberg.nu hemsida
+  disableSearch: false
+  themeVariant: green
+
+outputs:
+  home: ["HTML", "RSS", "JSON"]
+
+languages:
+  sv:
+    title: Välkommen till Baberg.nu
+    languageName: Svenska
+  en:
+    title: Welcome to Baberg.nu
+    weight: 2
+    languageName: English
+
+menu:
+  shortcuts:
+    - name: Presentation
+      identifier: presentation
+      url: /presentation
+    - name: Biografi
+      identifier: bio
+      url: /bio
