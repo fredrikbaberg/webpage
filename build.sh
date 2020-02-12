@@ -14,3 +14,4 @@ cd ../scouter
 echo "$(pwd)"
 hugo --baseURL=$BURL/scouter
 cd ../../
+echo "Klart att kopiera public/ till server."

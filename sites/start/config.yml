@@ -32,10 +32,10 @@ menu:
   shortcuts:
     - name: Presentation
       identifier: presentation
-      url: /presentation
+      url: /presentation/
     - name: Biografi
       identifier: bio
-      url: /bio
+      url: /bio/
     - name: Scouter
       identifier: scouter
-      url: /scouter
+      url: /scouter/
