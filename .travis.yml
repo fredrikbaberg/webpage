@@ -1,0 +1,24 @@
+language: minimal
+
+env:
+  - HUGO_VERSION=0.64.1
+
+before_install:
+  - mkdir -p bin
+  - curl -L https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz -o bin/hugo.tar.gz
+  - tar xzvvf bin/hugo.tar.gz -C ./bin
+
+script:
+  - ./build.sh
+
+deploy:
+  local_dir: public
+  repo: fredrikbaberg/fredrikbaberg.github.io
+  target_branch: master
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  email: fredrik.baberg@gmail.com
+  name: "fredrikbaberg"
+  on:
+    branch: master
