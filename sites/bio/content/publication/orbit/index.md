@@ -1,10 +1,10 @@
 ---
 title: "Adaptive object centered teleoperation control of a mobile manipulator"
 authors:
-- Båberg, F.
-- Wang, Y.
-- Caccamo, S.
-- Ögren, P.
+# - Båberg, F.
+# - Wang, Y.
+# - Caccamo, S.
+# - Ögren, P.
 date: "2016-05-16T00:00:00"
 doi: "10.1109/ICRA.2016.7487166"
 draft: true

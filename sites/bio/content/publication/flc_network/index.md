@@ -1,10 +1,10 @@
 ---
 title: "Extending a UGV Teleoperation FLC Interface with Wireless Network Connectivity Information"
 authors:
-- Caccamo, S.
-- Parasuraman, R.
-- Båberg, F.
-- Ögren, P.
+# - Caccamo, S.
+# - Parasuraman, R.
+# - Båberg, F.
+# - Ögren, P.
 date: "2015-09-28T00:00:00"
 doi: "10.1109/IROS.2015.7353987"
 draft: false

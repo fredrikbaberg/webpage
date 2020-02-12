@@ -1,11 +1,11 @@
 ---
 title: "Free look UGV teleoperation control tested in game environment: Enhanced performance and reduced workload"
 authors:
-- Båberg, F.
-- Caccamo, S.
-- Smets, N.
-- Neerincx, M.
-- Ögren, P.
+# - Båberg, F.
+# - Caccamo, S.
+# - Smets, N.
+# - Neerincx, M.
+# - Ögren, P.
 date: "2016-10-23T00:00:00"
 doi: "10.1109/SSRR.2016.7784321"
 draft: false

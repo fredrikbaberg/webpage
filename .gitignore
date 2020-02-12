@@ -1,1 +1,2 @@
-sites/bio/resources/_gen
+sites/*/resources/_gen
+public
