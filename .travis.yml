@@ -24,4 +24,4 @@ deploy:
   repo: fredrikbaberg/fredrikbaberg.github.io
   target_branch: master
   cleanup: true
-  fqdn: baberg.nu
+  # fqdn: baberg.nu
