@@ -23,5 +23,5 @@ deploy:
   local_dir: public
   repo: fredrikbaberg/fredrikbaberg.github.io
   target_branch: master
-  cleanup: false  
+  cleanup: true
   fqdn: $FQDN
