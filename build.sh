@@ -1,6 +1,6 @@
 #!/bin/bash
 # BURL=https://fredrikbaberg.github.io
-BURL=https://www.baberg.nu
+BURL=https://baberg.nu
 cd sites/
 cd start/
 hugo --baseURL=$BURL
