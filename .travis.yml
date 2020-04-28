@@ -2,7 +2,7 @@ language: shell
 os: linux
 
 env:
-  - HUGO_VERSION=0.64.1
+  - HUGO_VERSION=0.69.2
 
 before_install:
   - mkdir -p bin
@@ -17,6 +17,8 @@ script:
   - ./build.sh
 
 deploy:
+  on:
+    branch: master
   provider: pages:git
   token: $GITHUB_TOKEN
   edge: true

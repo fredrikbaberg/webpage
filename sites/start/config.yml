@@ -30,12 +30,19 @@ languages:
 
 menu:
   shortcuts:
-    - name: Presentation
-      identifier: presentation
-      url: /presentation/
     - name: Biografi
       identifier: bio
       url: /bio/
+      weight: 1
+    - name: Personlig sida
+      identifier: personal
+      url: /personal/
+      weight: 2
     - name: Scouter
       identifier: scouter
       url: /scouter/
+      weight: 3
+    - name: Presentation
+      identifier: presentation
+      url: /presentation/
+      weight: 4
