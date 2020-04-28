@@ -8,7 +8,7 @@ date: "2019-02-05T00:00:00Z"
 slides:
   theme: serif
   highlight_style: dracula
-draft: false
+draft: true
 ---
 
 # GDPR

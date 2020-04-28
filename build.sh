@@ -10,5 +10,7 @@ cd ../presentation
 hugo --baseURL=$BURL/presentation
 cd ../scouter
 hugo --baseURL=$BURL/scouter
+cd ../personal
+hugo --baseURL=$BURL/personal
 cd ../../
 echo "Klart att kopiera public/ till server."
