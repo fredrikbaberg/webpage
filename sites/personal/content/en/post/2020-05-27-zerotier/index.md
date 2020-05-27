@@ -52,7 +52,9 @@ The create the following script, `ZerotierRouting.start` [https://www.reddit.com
 > iptables -A FORWARD -i eth0 -o ztXXXXXXXX -m state --state RELATED,ESTABLISHED -j ACCEPT
 > iptables -A FORWARD -i ztXXXXXXXX -o eth0 -j ACCEPT
 
-Finally enable local.d scripts at boot time and add the script (https://unix.stackexchange.com/questions/442020/alpine-linux-run-a-startup-script-to-change-the-etc-issue):
+Enable local.d scripts at boot time and add the script (https://unix.stackexchange.com/questions/442020/alpine-linux-run-a-startup-script-to-change-the-etc-issue):
 > rc-update add local default
 > mv ZerotierRouting.start /etc/local.d/ZerotierRouting.start
 > chmod +x /etc/local.d/ZerotierRouting.start
+
+Finally, go to [my.zerotier.com](my.zerotier.com) portal and add a route with destination `192.168.1.0/24` `(via)` `10.1.2.3` (set destination to desired network, via IP to your Alpine Linux/Zerotier IP address).
