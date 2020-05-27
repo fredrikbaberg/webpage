@@ -32,9 +32,11 @@ image:
 projects: []
 ---
 
-I always forget how to make Alpine Linux appear properly in Proxmox, with qemu guest agent. So here the steps I use are:
+I always forget how to make Alpine Linux appear properly in Proxmox, with qemu guest agent. So here are the steps I use are:
 
 * Enable qemu agent in Proxmox
-* In Alpine linux, run the following commands:
-* > apk add qemu-guest-agent
-* Modify /etc/init.d/qemu-guest-agent to port /dev/vport1p1
+* run `rc-update add local default`
+* In Alpine linux, create a file called `/etc/local.d/Qemu.start` with content:
+* > #!/bin/sh
+* > qemu-ga -d -p /dev/vport1p1
+* Make file executable
