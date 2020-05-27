@@ -37,5 +37,4 @@ I always forget how to make Alpine Linux appear properly in Proxmox, with qemu g
 * Enable qemu agent in Proxmox
 * In Alpine linux, run the following commands:
 * > apk add qemu-guest-agent
-* > mkdir -p /dev/virtio-ports
-* > ln -s /dev/vport1p1 /dev/virtio-ports/org.qemu.guest_agent.0
+* Modify /etc/init.d/qemu-guest-agent to port /dev/vport1p1
