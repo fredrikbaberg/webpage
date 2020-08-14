@@ -10,7 +10,7 @@ tags:
 categories:
 - HomeAssistant
 date: "2020-08-11T20:12:00+02:00"
-lastmod: "2020-08-11T20:12:00+02:00"
+lastmod: "2020-08-14T10:46:00+02:00"
 featured: false
 draft: false
 
@@ -78,7 +78,7 @@ END
 ```
 ```
 CREATE CONTINUOUS QUERY "cq_5m_homeassistant_person" ON "archive" BEGIN
-    SELECT last("state") AS "state", mean("latitude") AS "latitude", mean("longitude") AS "longitude"
+    SELECT last("state") AS "state", median("latitude") AS "latitude", median("longitude") AS "longitude"
     INTO "archive"."autogen"."person"
     FROM "homeassistant"."autogen"."person"
     GROUP BY time(5m),*
