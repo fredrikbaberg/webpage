@@ -77,6 +77,14 @@ CREATE CONTINUOUS QUERY "cq_5m_homeassistant_fan" ON "archive" BEGIN
 END
 ```
 ```
+CREATE CONTINUOUS QUERY "cq_5m_homeassistant_person" ON "archive" BEGIN
+    SELECT last("state") AS "state", mean("latitude") AS "latitude", mean("longitude") AS "longitude"
+    INTO "archive"."autogen"."person"
+    FROM "homeassistant"."autogen"."person"
+    GROUP BY time(5m),*
+END
+```
+```
 CREATE CONTINUOUS QUERY "cq_5m_homeassistant_sensor" ON "archive" BEGIN
     SELECT mean("value") AS "value", mean("battery_level") AS battery_level, mean("temperature") AS temperature
     INTO "archive"."autogen"."sensor"
@@ -96,6 +104,7 @@ END
 #### Second level
 
 The second level keeps data for one week, sampled to 30 minutes. For simplicity I use `mean(*)` instead of writing each entry, this has the disadvantage that data will be prefixed by `mean`, e.g. `value` will be called `mean_value`.
+This is only for sensor, separate CQs need to be configured for other data.
 
 ```
 CREATE RETENTION POLICY "rp_1_week" ON "archive" DURATION 1w1d REPLICATION 1
