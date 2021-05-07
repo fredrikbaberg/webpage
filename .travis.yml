@@ -2,7 +2,7 @@ language: shell
 os: linux
 
 env:
-  - HUGO_VERSION=0.69.2
+  - HUGO_VERSION=0.83.1
 
 before_install:
   - mkdir -p bin
